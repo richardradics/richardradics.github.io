@@ -7,7 +7,7 @@ a {color: #4393d0;}
 @media (min-width: 769px) {
   /* image size 2048 x 1070 */
   #one > figure { z-index: 0 !important; background-image: url(images/ricsi.jpg); }
-  #two > figure { background-image: url(images/hero-b.jpg); }
+  #two > figure { background-image: url(images/designpatterns.png); }
   #three > figure { background-image: url(images/hero-c.jpg); }
   #four > figure { background-image: url(images/hero-d.jpg); }
   #five > figure { background-image: url(images/hero-e.jpg); }
