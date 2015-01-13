@@ -10,7 +10,7 @@ a {color: #4393d0;}
   #two > figure { background-image: url(images/designpatterns.png); }
   #three > figure { background-image: url(images/git2.png); }
   #four > figure { background-image: url(images/gwt.jpg); }
-  #five > figure { background-image: url(images/hero-e.jpg); }
+  #five > figure { background-image: url(images/lamps.jpg); }
 }
 
 @media (max-width: 768px) {
