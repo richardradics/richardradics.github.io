@@ -9,7 +9,7 @@ a {color: #4393d0;}
   #one > figure { z-index: 0 !important; background-image: url(images/ricsi.jpg); }
   #two > figure { background-image: url(images/designpatterns.png); }
   #three > figure { background-image: url(images/git2.png); }
-  #four > figure { background-image: url(images/hero-d.jpg); }
+  #four > figure { background-image: url(images/gwt.jpg); }
   #five > figure { background-image: url(images/hero-e.jpg); }
 }
 
