@@ -10,6 +10,7 @@ a {color: #4393d0;}
   #two > figure { background-image: url(images/designpatterns.png); }
   #three > figure { background-image: url(images/git2.png); }
   #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }
+  #alberlet > figure { background-image: url(images/alberlet_play_header.png);  }
   #four > figure { background-image: url(images/gwt.jpg); }
   #five > figure { background-image: url(images/lamps.jpg); }
 }
@@ -20,6 +21,7 @@ a {color: #4393d0;}
   #two > figure { background-image: url(images/mobile-hero-b.jpg); }
   #three > figure { background-image: url(images/mobile-hero-c.jpg); }
   #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }
+  #alberlet > figure { background-image: url(images/alberlet_play_header.png);  }
   #four > figure { background-image: url(images/mobile-hero-d.jpg); }
   #five > figure { background-image: url(images/mobile-hero-e.jpg); }
 }
