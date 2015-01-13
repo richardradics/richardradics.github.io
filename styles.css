@@ -9,6 +9,7 @@ a {color: #4393d0;}
   #one > figure { z-index: 0 !important; background-image: url(images/ricsi.jpg); }
   #two > figure { background-image: url(images/designpatterns.png); }
   #three > figure { background-image: url(images/git2.png); }
+  #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }
   #four > figure { background-image: url(images/gwt.jpg); }
   #five > figure { background-image: url(images/lamps.jpg); }
 }
@@ -18,6 +19,7 @@ a {color: #4393d0;}
   #one > figure { z-index: 0 !important; background-image: url(images/mobile-hero-a.jpg); }
   #two > figure { background-image: url(images/mobile-hero-b.jpg); }
   #three > figure { background-image: url(images/mobile-hero-c.jpg); }
+  #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }
   #four > figure { background-image: url(images/mobile-hero-d.jpg); }
   #five > figure { background-image: url(images/mobile-hero-e.jpg); }
 }
