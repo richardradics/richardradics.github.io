@@ -114,7 +114,7 @@
           <h3>Hirdetés feladás 3 perc alatt.</h3>
           
 		  
-		  <ul class="gallery clearfix">
+		  <ul class="gallery2 clearfix">
 				<li><a href="images/fullscreen/albi.png" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/rsz_albi.png" width="90" height="160"  /></a></li>	
 				<li><a href="images/fullscreen/albi1.png" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/rsz_albi1.png" width="90" height="160"  /></a></li>	
 				<li><a href="images/fullscreen/albi2.png" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/rsz_albi2.png" width="90" height="160"  /></a></li>
@@ -159,8 +159,9 @@
 				$("area[rel^='prettyPhoto']").prettyPhoto();
 				
 				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+				$(".gallery2:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
 				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-		
+		/*
 				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
 					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
 					changepicturecallback: function(){ initialize(); }
@@ -169,7 +170,7 @@
 				$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
 					custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
 					changepicturecallback: function(){ _bsap.exec(); }
-				});
+				});*/
 			});
 			</script>
 	
