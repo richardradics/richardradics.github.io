@@ -13,6 +13,8 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/gifffer.js"></script>
+
 	<style type="text/css" media="screen"> 
 	
 	ul li { display: inline; }
@@ -113,7 +115,7 @@
           <h2>Albérlet.hu</h2>
           <h3>Hirdetés feladás 3 perc alatt.</h3>
           
-		  
+		 		  	
 		  <ul class="gallery2 clearfix">
 				<li><a href="images/fullscreen/albi.png" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/rsz_albi.png" width="90" height="160"  /></a></li>	
 				<li><a href="images/fullscreen/albi1.png" rel="prettyPhoto[gallery2]"><img src="images/thumbnails/rsz_albi1.png" width="90" height="160"  /></a></li>	
@@ -133,6 +135,49 @@
         </article>
       </section>
 	  
+	    <section id="parlament">
+        <figure></figure>
+        <article>
+          <img alt="{altcontent}" src="images/google_play_icon.png">
+		  				 
+          <h2>Parlament</h2>
+          <h3>Alkalmazás a Magyar Országgyűléshez.</h3>
+          
+		  
+		  <ul class="gallery clearfix">
+			<li><a href="images/fullscreen/test.png" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/rsz_test.png" width="90" height="160"  /></a></li>
+				<li><a href="images/fullscreen/test2.png" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/rsz_test2.png" width="90" height="160"  /></a></li>
+				<li><a href="images/fullscreen/test3.png" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/rsz_test3.png" width="90" height="160"  /></a></li>
+				<li><a href="images/fullscreen/test4.png" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/rsz_test4.png" width="90" height="160"  /></a></li>
+				<li><a href="images/fullscreen/test5.png" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/rsz_test5.png" width="90" height="160"  /></a></li>
+				<li><a href="images/fullscreen/test6.png" rel="prettyPhoto[gallery1]"><img src="images/thumbnails/rsz_test6.png" width="90" height="160"  /></a></li>
+			</ul>
+		  
+		  
+		  <a href="https://play.google.com/store/apps/details?id=hu.pont.parlament">
+				<img alt="Get it on Google Play"
+						src="https://developer.android.com/images/brand/hu_generic_rgb_wo_60.png" />
+			</a>
+        </article>
+      </section>
+	  
+	    <section id="iltreno">
+        <figure></figure>
+        <article>
+         		  			
+          <h2>Il Treno</h2>
+          <h3>Éttermi alkalmazás prototípus.</h3>
+        <ul class="navcontainer">	
+			<li><img data-gifffer="images/iltrenonew1.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenonew2.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenonew3.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenonew4.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenonew5.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenonew6.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+		</ul>		 
+		  		  
+        </article>
+      </section>
 	  
       <section id="five">
         <figure></figure>
@@ -156,6 +201,10 @@
 	
 	<script type="text/javascript" charset="utf-8">
 			$(document).ready(function(){
+			
+				Gifffer();
+
+			
 				$("area[rel^='prettyPhoto']").prettyPhoto();
 				
 				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
