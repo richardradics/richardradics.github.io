@@ -87,14 +87,14 @@ a:hover {
   color: #236ea7;
 }
 
-#navcontainer ul
+ul.navcontainer
 {
 margin: 0;
 padding: 0;
 list-style-type: none;
 }
 
-#navcontainer ul li { display: inline; }
+ul.navcontainer li { display: inline-block; }
 
 article {
   z-index: 10;
