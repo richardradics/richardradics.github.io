@@ -7,6 +7,7 @@ a {color: #4393d0;}
 @media (min-width: 769px) {
   /* image size 2048 x 1070 */
   #one > figure { z-index: 0 !important; background-image: url(images/ricsi.jpg); }
+  #devserver > figure { background-image: url(images/dev_server_content.png); }
   #two > figure { background-image: url(images/designpatterns.png); }
   #three > figure { background-image: url(images/git2.png); }
   #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }
@@ -19,7 +20,8 @@ a {color: #4393d0;}
 
 @media (max-width: 768px) {
   /* image size 748 x 401 */
-  #one > figure { z-index: 0 !important; background-image: url(images/mobile-hero-a.jpg); }
+  #one > figure { z-index: 0 !important; background-image: url(images/ricsi.jpg); }
+  #devserver > figure { background-image: url(images/dev_server_content.png); }
   #two > figure { background-image: url(images/mobile-hero-b.jpg); }
   #three > figure { background-image: url(images/mobile-hero-c.jpg); }
   #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }  
