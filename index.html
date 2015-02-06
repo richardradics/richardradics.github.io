@@ -260,18 +260,17 @@ function show(id, value) {
 			$(document).ready(function(){
 						
 	
-			setTimeout(function(){
-				Gifffer();},6500);
+			
+				Gifffer();
 				
-
-			setTimeout(function(){
+		
 				$("area[rel^='prettyPhoto']").prettyPhoto();
 				
 				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
 				$(".gallery2:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
 				$(".gallery3:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
 				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
-				},3500);
+				
 		/*
 				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
 					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
