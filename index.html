@@ -188,13 +188,13 @@
           <h2>IL Treno</h2>
           <h3>Éttermi alkalmazás prototípus.</h3>
         <ul class="navcontainer">	
-			<li><img class="lazy" data-original="images/iltrenored1.gif" data-gifffer="images/iltrenored1.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img class="lazy" data-original="images/iltrenored2.gif" data-gifffer="images/iltrenored2.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img class="lazy" data-original="images/iltrenored3.gif" data-gifffer="images/iltrenored3.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img class="lazy" data-original="images/iltrenored4.gif"data-gifffer="images/iltrenored4.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img class="lazy" data-original="images/iltrenored5.gif"data-gifffer="images/iltrenored5.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img class="lazy" data-original="images/iltrenored6.gif"data-gifffer="images/iltrenored6.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img class="lazy" data-original="images/iltrenored7.gif"data-gifffer="images/iltrenored7.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenored1.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenored2.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenored3.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenored4.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenored5.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenored6.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img data-gifffer="images/iltrenored7.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
 		</ul>		 
 		  		  
         </article>
@@ -221,14 +221,7 @@
 </div>
 	
 	<script type="text/javascript" charset="utf-8">
-	
 		
-	$("img.lazy").show().lazyload({         
-    effect : "fadeIn",
-    container: $("#iltreno")
-});
-     
-	
 	function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
 
@@ -240,29 +233,45 @@
     }
 }
 
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+
+onReady(function () {
+	setTimeout(function(){
+    show('page', true);
+    show('loading', false);
+	$("body").hide().fadeIn(1000);
+	},5000);
+});
 function show(id, value) {
     document.getElementById(id).style.display = value ? 'block' : 'none';
 }
 
-onReady(function () {
-    show('page', true);
-    show('loading', false);
-});
 	
-	
-			//$(document).ready(function(){$("body").hide().fadeIn(1000);});
+			
 	
 			$(document).ready(function(){
-			
-				Gifffer();
+						
+	
+			setTimeout(function(){
+				Gifffer();},6500);
+				
 
-			
+			setTimeout(function(){
 				$("area[rel^='prettyPhoto']").prettyPhoto();
 				
 				$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
 				$(".gallery2:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
 				$(".gallery3:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
 				$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+				},3500);
 		/*
 				$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
 					custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',

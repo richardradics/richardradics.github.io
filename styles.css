@@ -153,8 +153,8 @@ footer {
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(192, 192, 192, 0.5);
-    background-image: url(images/spinningwheel.gif);
+    background-color: rgba(237, 237, 238, 1);
+    background-image: url(images/circular.gif);
     background-repeat: no-repeat;
     background-position: center;
 }
