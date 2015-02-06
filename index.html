@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="js/gifffer.js"></script>
-
+	<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+	
+	
 	<style type="text/css" media="screen"> 
 	
 	ul li { display: inline; }
@@ -186,13 +188,13 @@
           <h2>IL Treno</h2>
           <h3>Éttermi alkalmazás prototípus.</h3>
         <ul class="navcontainer">	
-			<li><img data-gifffer="images/iltrenored1.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img data-gifffer="images/iltrenored2.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img data-gifffer="images/iltrenored3.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img data-gifffer="images/iltrenored4.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img data-gifffer="images/iltrenored5.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img data-gifffer="images/iltrenored6.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
-			<li><img data-gifffer="images/iltrenored7.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img class="lazy" data-original="images/iltrenored1.gif" data-gifffer="images/iltrenored1.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img class="lazy" data-original="images/iltrenored2.gif" data-gifffer="images/iltrenored2.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img class="lazy" data-original="images/iltrenored3.gif" data-gifffer="images/iltrenored3.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img class="lazy" data-original="images/iltrenored4.gif"data-gifffer="images/iltrenored4.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img class="lazy" data-original="images/iltrenored5.gif"data-gifffer="images/iltrenored5.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img class="lazy" data-original="images/iltrenored6.gif"data-gifffer="images/iltrenored6.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
+			<li><img class="lazy" data-original="images/iltrenored7.gif"data-gifffer="images/iltrenored7.gif" data-gifffer-width="270" data-gifffer-height="480"/></li>
 		</ul>		 
 		  		  
         </article>
@@ -219,6 +221,14 @@
 </div>
 	
 	<script type="text/javascript" charset="utf-8">
+	
+		
+	$("img.lazy").show().lazyload({         
+    effect : "fadeIn",
+    container: $("#iltreno")
+});
+     
+	
 	function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
 
