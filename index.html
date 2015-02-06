@@ -30,6 +30,8 @@
         <h1><span>Richard Radics<br /> Software Developer</span></h1>
     </header>
 
+	<div id="loading"></div>
+	<div id="page">
     <main>
       <section id="one">
         <figure></figure>
@@ -210,13 +212,36 @@
         </article>
       </section>
     </main>
-
+</div>
     <footer>
       <p>MIT License. Template by <a href="//danielleswank.com">Danielle Swank</a>. <a href="//github.com/danielleswank/css-parallax-template" target="_blank">GitHub</a>.</p>
     </footer>
 
 	
 	<script type="text/javascript" charset="utf-8">
+	function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
+	
+	
+			$(document).ready(function(){$("body").hide().fadeIn(1000);});
+	
 			$(document).ready(function(){
 			
 				Gifffer();
