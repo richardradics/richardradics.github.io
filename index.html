@@ -34,74 +34,42 @@
 
 	<div id="loading"></div>
 	<div id="page">
+	 <!--  
+    <div id="floatbar" style="background:gray;z-index:300;
+                                width:80px;
+                                height:160px;
+								marginLeft:20px;
+                                position:absolute;
+								opacity:0.6;
+                                left:0;top:200px;">
+								
+								<ul>
+			<li><img src="images/arrowup.png" width="20" height="60"  /></li>
+				<li><img src="images/arrowdown.png" width="20" height="60"  /></li>
+			</ul>
+								
+    </div> -->
+
     <main>
       <section id="one">
         <figure></figure>
         <article>
           <img alt="{altcontent}" src="images/java.png">
-          <h2>Java fejtörők</h2>
+          <h2>Prezentációk</h2>
+		  <h3>Development server installation.</h3>
+		   <a href="https://prezi.com/me0_ojby3c0v/development-server" target="_blank">PREZI</a>
           <h3>Joshua Block, Neal Gafter: Java-fejtörők könyvének főbb tanulságai</h3>
 		   <a href="https://prezi.com/7whvlvpzf0wt/java-fejtorok" target="_blank">PREZI</a>
-		  <!--
-		  <iframe src="http://prezi.com/embed/7whvlvpzf0wt/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>-->
-		           
-        </article>
-      </section>
-
-	  <section id="devserver">
-        <figure></figure>
-        <article>
-          <img alt="{altcontent}" src="images/shell_dev.jpg">
-          <h2>Development Server</h2>
-          <h3>Development server installation.</h3>
-		   <a href="https://prezi.com/me0_ojby3c0v/development-server" target="_blank">PREZI</a>
-		  <!--
-		  <iframe frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="http://prezi.com/embed/me0_ojby3c0v/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0#"></iframe>
-		        -->   
-        </article>
-      </section>
-	  
-	  
-      <section id="two">
-        <figure></figure>
-        <article>
-          <img alt="{altcontent}" src="images/the23.gif">
-          <h2>Tervezési minták</h2>
-          <h3>A Gang of Four tervezési mintáinak bemutatása</h3>
-		   <a href="https://prezi.com/zdoqpm05pe0p/tervezesi-mintak/ target="_blank"">PREZI</a>
-          
-		  <!--
-		  <iframe src="http://prezi.com/embed/zdoqpm05pe0p/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>-->
-		  
-        </article>
-      </section>
-
-     <section id="three">
-        <figure></figure>
-        <article>
-          <img alt="{altcontent}" src="images/git-logo.png">
-          <h2>Git</h2>
-          <h3>A Git verziókezelő rendszer bemutatása</h3>
-		   <a href="https://prezi.com/lwv_skd1gaj9/git/" target="_blank">PREZI</a>
-          <!--
-		  <iframe src="http://prezi.com/embed/lwv_skd1gaj9/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>-->
-		  
-        </article>
-      </section>
-
-      <section id="four">
-        <figure></figure>
-        <article>
-          <img alt="{altcontent}" src="images/bdd-feature.png">
-		  				 
-          <h2>Calabash</h2>
-          <h3>Calabash BDD framework bemutatása</h3>
+		   <h3>A Gang of Four tervezési mintáinak bemutatása</h3>
+		   <a href="https://prezi.com/zdoqpm05pe0p/tervezesi-mintak/" target="_blank">PREZI</a>
+		   <h3>A Git verziókezelő rendszer bemutatása</h3>
+		   <a href="https://prezi.com/lwv_skd1gaj9/git/" target="_blank">PREZI</a>		   
+		   <h3>Calabash BDD framework bemutatása</h3>
 		   <a href="https://prezi.com/kv8dmrdcjdeo/calabash/" target="_blank">PREZI</a>
-          <!--
-		  <iframe src="http://prezi.com/embed/kv8dmrdcjdeo/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;token=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>-->
-		  
+		          
         </article>
       </section>
+
 
 	  <section id="besttaxi">
         <figure></figure>
@@ -247,6 +215,17 @@ function sleep(milliseconds) {
   }
 }
 
+
+$(window).scroll(function(){
+    if ($(window).scrollTop() >= 200)
+    {
+        $("#floatbar").css({position:'fixed',left:'0',top:'0'});
+    }
+    else
+    {
+        $("#floatbar").css({position:'absolute',left:'0',top:'200px'});
+    }
+});
 
 onReady(function () {
 	
