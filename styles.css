@@ -7,6 +7,7 @@ a {color: #4393d0;}
 @media (min-width: 769px) {
   /* image size 2048 x 1070 */
   #one > figure { z-index: 0 !important; background-image: url(images/ricsi.jpg); }  
+  #alberlet_ker > figure { background-image: url(images/alberlet_play_header.png);  }
   #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }
   #alberlet > figure { background-image: url(images/alberlet_play_header.png);  }
   #parlament > figure { background-image: url(images/google_play_parlament.png);  }
@@ -19,13 +20,14 @@ a {color: #4393d0;}
 @media (max-width: 768px) {
   /* image size 748 x 401 */
   #one > figure { z-index: 0 !important; background-image: url(images/ricsi.jpg); } 
+  #alberlet_ker > figure { background-image: url(images/alberlet_play_header.png);  }
   #besttaxi > figure { background-image: url(images/besttaxi.jpg);  }  
   #alberlet > figure { background-image: url(images/alberlet_play_header.png);  }
   #parlament > figure { background-image: url(images/google_play_parlament.png);  }
   #iltreno > figure { background-image: url(images/il_treno_bg.png);  }
   #mompark > figure { background-image: url(images/mompark.jpg);  }
-  #four > figure { background-image: url(images/mobile-hero-d.jpg); }
-  #five > figure { background-image: url(images/mobile-hero-e.jpg); }
+  #four > figure { background-image: url(images/gwt.jpg); }
+  #five > figure { background-image: url(images/lamps.jpg); }
 }
 /* END EDITABLE CSS */
 
